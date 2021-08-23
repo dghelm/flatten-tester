@@ -7,9 +7,11 @@ const chalk = require("chalk");
 // const correctSkylink = "sia://AACnKwvDh6j3VwNmvnRGpxq-tQ2_JLcXZV2FFXwCp2HREA";
 
 
-// Tiny site build
+// small-build site (should have black background)
 const buildPath = "./small-build"
 const correctSkylink = "sia://AABal7NyB-nDPKWDqjkiZepv6L3L0RmJyWLAmi6i7O5uqA";
+// //windows: 
+// const correctSkylink = "sia://AADLuAmVvoY6p36OgpGchacyoY_l585_bvbKEtbcUmes7w";
 
 const servers = [
   'https://eu-ger-1.siasky.net',
