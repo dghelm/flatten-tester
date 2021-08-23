@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "skynet": "node ./scripts/skynet.js"
+  },
+  "devDependencies": {
+    "@skynetlabs/skynet-nodejs": "^2.1.0",
+    "chalk": "^4.1.2",
+    "shuffle-array": "^1.0.1",
+    "skynet-js": "^4.0.12-beta"
+  }
+}
