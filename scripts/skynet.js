@@ -34,9 +34,9 @@ const servers = [
 ]
 
 
-const pushDirectoryToSkynet = async (path, nodeClient) => {
+const pushDirectoryToSkynet = async (path, nodeClient, server) => {
   try {
-    const response = await nodeClient.uploadDirectory(path);
+    const response = await nodeClient.uploadDirectory(path, { portalUrl: server });
     return response;
   } catch (e) {
     return {};
@@ -64,7 +64,7 @@ const deploy = async (server) => {
   let nodeClient = new skynetNode.SkynetClient(server);
 
   console.log(`🛰  ${server}...`);
-  let skylink = await pushDirectoryToSkynet(buildPath, nodeClient);
+  let skylink = await pushDirectoryToSkynet(buildPath, nodeClient, server);
 
   if (!skylink) {
     console.log(`📡 App deployment failed`);
